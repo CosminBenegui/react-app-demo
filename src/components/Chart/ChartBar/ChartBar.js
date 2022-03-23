@@ -20,4 +20,6 @@ function ChartBar(props) {
   </div>;
 }
 
+
+
 export default ChartBar;
