@@ -44,7 +44,7 @@ function ExpenseForm(props) {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
 
@@ -60,6 +60,7 @@ function ExpenseForm(props) {
         <div className='new-expense__control'>
           <label>Title</label>
           <input
+          placeholder="Enter a title..."
             type='text'
             value={enteredTitle}
             onChange={titleChangeHandler}
@@ -68,6 +69,7 @@ function ExpenseForm(props) {
         <div className='new-expense__control'>
           <label>Amount</label>
           <input
+          placeholder="Enter an amount..."
             type='number'
             min='0.01'
             step='0.01'
