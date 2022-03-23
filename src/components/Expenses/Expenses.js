@@ -5,7 +5,7 @@ import Card from '../UI/Card';
 import ExpensesFilter from './ExpensesFilter/ExpensesFilter';
 import './Expenses.css';
 
-const Expenses = (props) => {
+function Expenses(props){
   const [filteredYear, setFilteredYear] = useState('2020');
 
   const filterChangeHandler = selectedYear => {
@@ -42,3 +42,5 @@ const Expenses = (props) => {
 };
 
 export default Expenses;
+
+
